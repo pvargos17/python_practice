@@ -29,19 +29,19 @@ settings.configure(
 
 # Django settings need to be configured before other imports happen
 # thus the uncommon double-import lines above and below here
-from django.urls import path
+from django.conf.urls import url
 from django.core.wsgi import get_wsgi_application
 from django.http import HttpResponse
 
 
 # building views.py
 def index(request):
-    return HttpResponse("<marquee direction='right'>It is loose!</marquee>")
+    return HttpResponse("get started building!")
 
 
 # building urls.py
 urlpatterns = [
-    path('', index)
+    url(r'^$', index)
 ]
 
 
