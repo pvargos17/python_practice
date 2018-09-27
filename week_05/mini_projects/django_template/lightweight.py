@@ -17,6 +17,7 @@ settings.configure(
 # Django settings need to be configured before other imports happen
 # thus the uncommon double-import lines above and below here
 from django.urls import path
+from django.core.wsgi import get_wsgi_application
 from django.http import HttpResponse
 
 
@@ -29,6 +30,11 @@ def index(request):
 urlpatterns = [
     path('', index)
 ]
+
+
+# create WSGI specs
+application =get_wsgi_application()
+
 
 # building manage.py
 if __name__ == '__main__':
