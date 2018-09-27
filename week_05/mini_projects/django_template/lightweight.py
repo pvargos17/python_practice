@@ -1,10 +1,18 @@
 import sys
 from django.conf import settings
 
+
+# set DEBUG = True only if there's no other value coming to DEBUG from
+# the environment variables
+# to disable DEBUG you can now type e.g. $ export DEBUG=off
+DEBUG = os.environ.get('DEBUG', 'on') == 'on'
+# set a random new SECRET_KEY unless there's one coming from the environment
+SECRET_KEY = os.environ.get('SECRET_KEY', os.urandom(32))
+
 # building settings.py
 settings.configure(
-    DEBUG=True,
-    SECRET_KEY='thisisasecretkey',
+    DEBUG=DEBUG,
+    SECRET_KEY=SECRET_KEY,
     ROOT_URLCONF=__name__,
     MIDDLEWARE_CLASSES=(
         'django.middleware.common.CommonMiddleware',
