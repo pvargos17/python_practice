@@ -8,6 +8,8 @@ from django.conf import settings
 DEBUG = os.environ.get('DEBUG', 'on') == 'on'
 # set a random new SECRET_KEY unless there's one coming from the environment
 SECRET_KEY = os.environ.get('SECRET_KEY', os.urandom(32))
+# allows for comma-separated hostname input, defaults to localhost
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost').split(',')
 
 # building settings.py
 settings.configure(
