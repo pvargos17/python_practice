@@ -1,3 +1,4 @@
+import os
 import sys
 from django.conf import settings
 
@@ -7,14 +8,16 @@ from django.conf import settings
 # to disable DEBUG you can now type e.g. $ export DEBUG=off
 DEBUG = os.environ.get('DEBUG', 'on') == 'on'
 # set a random new SECRET_KEY unless there's one coming from the environment
-SECRET_KEY = os.environ.get('SECRET_KEY', os.urandom(32))
+SECRET_KEY = os.environ.get('SECRET_KEY', '{{ secret_key }}')
 # allows for comma-separated hostname input, defaults to localhost
+# ALLOWED HOSTS verifies the HTTP request header values to check for matches
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost').split(',')
 
 # building settings.py
 settings.configure(
     DEBUG=DEBUG,
     SECRET_KEY=SECRET_KEY,
+    ALLOWED_HOSTS=ALLOWED_HOSTS,
     ROOT_URLCONF=__name__,
     MIDDLEWARE_CLASSES=(
         'django.middleware.common.CommonMiddleware',
