@@ -33,7 +33,7 @@ urlpatterns = [
 
 
 # create WSGI specs
-application =get_wsgi_application()
+application = get_wsgi_application()
 
 
 # building manage.py
