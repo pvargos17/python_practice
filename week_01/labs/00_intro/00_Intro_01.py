@@ -13,3 +13,12 @@
 	- Use the interpretor to perform simple math.
 	- Calculate how many seconds are in a year.
 '''
+
+
+# x = "hello world"
+
+# print(x)
+
+x = 60 * 60 * 24 * 364
+
+print(x)
