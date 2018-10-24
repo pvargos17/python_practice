@@ -8,6 +8,12 @@ Display the cost of the trip in the console.
 
 '''
 
+print("""
+-------------------------------------------------
+               TRIP COST CALCULATOR
+-------------------------------------------------
+""")
+
 def cost(x,y,z):
 
     miles = x
