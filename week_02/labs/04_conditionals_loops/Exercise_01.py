@@ -6,3 +6,9 @@ Print the result.
 NOTE: We will be using the input() function. This is demonstrated below.
 
 '''
+number = input("Pick a number between 1 and 1,000,000 ")
+
+if number % 2 == 0:
+    print("Even")
+else:
+    print("False")
