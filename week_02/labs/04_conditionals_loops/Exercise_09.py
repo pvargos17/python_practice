@@ -13,6 +13,9 @@ The output should look something like this:
 	10|20|30|40|50|60|70|80|90|100|
 
 '''
-
-for n in range( 1, 101):
-	if n
+table = ""
+for n in range(1,11):
+	for num in range(1,11):
+		table += f"{n*num}|"
+	table += "\n"
+print(table)
