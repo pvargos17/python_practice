@@ -10,3 +10,8 @@ If the user enters an odd numbered list, add the last item
 to a tuple with the number 0.
 
 '''
+def make_tuple(list1):
+    new_tuple = []
+    x = list1.sort()
+    for i in x:
+

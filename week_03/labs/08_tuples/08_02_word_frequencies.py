@@ -10,3 +10,7 @@ Source: Chapter on "Tuples" in Think Python 2e:
 http://greenteapress.com/thinkpython2/html/thinkpython2013.html
 
 '''
+
+
+def most_frequent(list1):
+
