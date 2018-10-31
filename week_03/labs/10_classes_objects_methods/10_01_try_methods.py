@@ -18,3 +18,10 @@ Source: Exercise in chapter "Strings" in Think Python 2e:
 http://greenteapress.com/thinkpython2/html/thinkpython2009.html
 
 '''
+print("     spacious    ".strip())
+
+x = "banana rama"
+print(x.replace("a","e",1))
+
+print(x.find("a",4,6))
+

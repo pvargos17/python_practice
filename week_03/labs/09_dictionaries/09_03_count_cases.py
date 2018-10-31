@@ -22,7 +22,9 @@ Example output:
 def count_sent(str1):
     counter = {"Upper case": 0, "Lower case" : 0, "Punctuation" : 0}
     for i in str1:
-        if i.isupper():
+        if i.isspace():
+            pass
+        elif i.isupper():
             counter["Upper case"] += 1
         elif i.islower():
             counter["Lower case"] += 1
@@ -30,6 +32,6 @@ def count_sent(str1):
             counter["Punctuation"] += 1
     for p in counter:
         print(p , counter[p])
-    return len(str1)
+
 x = "I love to work with dictionaries!"
 print(count_sent(x))
