@@ -9,3 +9,9 @@ TIP:
     very common. head over to SO and find a solution!
 
 '''
+import requests
+
+import requests
+
+r = requests.get("http://codingnomads.co/")
+print(r.text.encode('utf-8'))
