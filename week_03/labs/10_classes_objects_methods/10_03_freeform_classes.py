@@ -17,3 +17,24 @@ Using objects you can model anything you want.
 Cars, animals, poker games, sports teams, trees, beers, people etc...
 
 '''
+
+class Beer:
+    """
+        Types of beers
+
+    """
+    def __init__(self, category="IPA", percentage, company):
+        self.category = category
+        self.percentage = percentage
+        self.company = company
+
+    def __str__(self):
+
+
+    def print_Beer(self):
+
+class Turds:
+
+
+
+class
