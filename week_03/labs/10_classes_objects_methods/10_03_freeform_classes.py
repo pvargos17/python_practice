@@ -32,7 +32,7 @@ class Beer:
         self.company = company
 
     def __str__(self):
-
+        return "Beer "
 
     def print_beer(self):
 
