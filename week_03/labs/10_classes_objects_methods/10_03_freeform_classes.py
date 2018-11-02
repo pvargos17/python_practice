@@ -23,7 +23,10 @@ class Beer:
         Types of beers
 
     """
-    def __init__(self, category="IPA", percentage, company):
+    beverage = ["Alcohlic", "Non-Alcohlic"]
+    container = ["Glass", "Bottle", "Can"]
+
+    def __init__(self, category="IPA", percentage=5, company="Budwieser"):
         self.category = category
         self.percentage = percentage
         self.company = company
@@ -31,10 +34,32 @@ class Beer:
     def __str__(self):
 
 
-    def print_Beer(self):
+    def print_beer(self):
 
 class Turds:
 
+    """
+    The mean green matter that no one talks about
+
+    """
+    brand = ["own", "others"]
+    location = ["toliet", "outside toliet"]
+
+    def __init__(self, color = "brown", smell = "putrid", consistency = "solid" )
+        self.color = color
+        self.smell = smell
+        self.consistency = consistency
+
+    def __str__(self):
 
 
-class
+
+class Women:
+    """
+    Types of Women
+
+
+    ""
+
+
+
