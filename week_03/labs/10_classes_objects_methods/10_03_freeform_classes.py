@@ -26,15 +26,18 @@ class Beer:
     beverage = ["Alcohlic", "Non-Alcohlic"]
     container = ["Glass", "Bottle", "Can"]
 
-    def __init__(self, category="IPA", percentage=5, company="Budwieser"):
+    def __init__(self, name ="unavailable", category="IPA", percentage=5, company="Budwieser"):
+        self.name = name
         self.category = category
         self.percentage = percentage
         self.company = company
 
     def __str__(self):
-        return "Beer "
+        return f"{self.name} |{self.category} | {self.percentage} | {self.compnay}"
+
 
     def print_beer(self):
+        print(f"{self.name} is a(n) {self.category} with a {self.percentage} alcohol content and is made by {self.company}")
 
 class Turds:
 
@@ -51,15 +54,13 @@ class Turds:
         self.consistency = consistency
 
     def __str__(self):
+        return f"{self.color} | {self.smell} | {self.consistency}"
+
+    def print_Turds(self):
+        print(f"This turd is {self.color} and smells {self.smell} with a consistency of {self.consistency})"
 
 
 
-class Women:
-    """
-    Types of Women
-
-
-    ""
 
 
 
