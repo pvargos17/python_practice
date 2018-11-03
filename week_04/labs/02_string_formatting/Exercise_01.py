@@ -25,3 +25,12 @@ office = [
     {"full_name": "Creed Bratton", "item": "mung beans"},
     {"full_name": "Darryl Philbin", "item": "forklift"},
 ]
+
+
+# for i in office:
+#     print(f)
+
+for character in office:
+    first, last = character["full_name"].split()
+    form_name = f'{last.upper()}, {first.capitalize()}'
+    print(f'{form_name: <20}{character["item"].capitalize()}')
