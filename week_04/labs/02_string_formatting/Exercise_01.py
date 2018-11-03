@@ -32,5 +32,14 @@ office = [
 
 for character in office:
     first, last = character["full_name"].split()
-    form_name = f'{last.upper()}, {first.capitalize()}'
+    form_name = f"{last.upper()}, {first.capitalize()}"
     print(f'{form_name: <20}{character["item"].capitalize()}')
+
+
+
+
+
+    # for character in office:
+    # first, last = character["full_name"].split()
+    # form_name = f'{last.upper()}, {first.capitalize()}'
+    # print(f'{form_name: <20}{character["item"].capitalize()}')
