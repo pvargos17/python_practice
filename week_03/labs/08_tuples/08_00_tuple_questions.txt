@@ -1,10 +1,20 @@
 1 - What is one important difference between tuples and lists?
 
+The Key Difference between a List and a Tuple. The main difference between lists and a tuples is the fact that lists are mutable whereas tuples are immutable. A mutable data type means that a python object of this type can be modified
+
 2 - What are two ways to create a tuple?
+
+In Python tuples are written with round brackets.
 
 3 - Give an example of tuple assignment to assign two variables.
 
+thistuple = ("apple", "banana", "cherry")
+
+
 4 - Why is it beneficial to return a tuple from a function?
+
+count() Returns the number of times a specified value occurs in a tuple
+index() Searches the tuple for a specified value and returns the position of where it was found
 
 5 - What are variable-length arguments?
 
